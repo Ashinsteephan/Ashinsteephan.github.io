@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="login.css">
+    <!----------- JAVASCRIPT SECTION --------------->
+    <script src="transaction.JS" ></script>
+    <!----------- CSS STYLE --------------->
+    <style type="text/css">
+       /*---------LOGIN BOX------------*/
+      .wrapper{
+        width: 380px;
+        background:skyblue;
+        border-radius: 0px;
+        box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+      }
+      /*--------- LOGIN HEADER SECTION ------------*/
+      .wrapper .title{
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 100px;
+        color:blue;
+        user-select: none;
+        border-radius: 0px 0px 0 0;
+        background-color: skyblue;
+      }
+      .wrapper form .field{
+        height: 50px;
+        width: 100%;
+        margin-top: 20px;
+        position: relative;
+      }
+      /*---------INPUT SECTION------------*/
+      .wrapper form .field input{
+        height: 100%;
+        width: 100%;
+        outline: none;
+        font-size: 17px;
+        padding-left: 20px;
+        border: 1px solid blue;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+      }
+      .wrapper form .field input:focus,
+      form .field input:valid{
+        border-color: #4158d0;
+      }
+      .wrapper form .field label{
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        color: #999999;
+        font-weight: 400;
+        font-size: 17px;
+        pointer-events: none;
+        transform: translateY(-50%);
+        transition: all 0.3s ease;
+      }
+      /*---------SUBMIT SECTION------------*/
+      form .field input[type="submit"]{
+        color: #fff;
+        border: none;
+        padding-left: 0;
+        margin-top: -10px;
+        font-size: 20px;
+        font-weight: 500;
+        cursor: pointer;
+        background-color: blue;
+        transition: all 0.3s ease;
+      }
+    </style>
+    <!----------- END OF CSS STYLE --------------->
+  </head>
+  <!---------------- BODY SECTION ---------------->
+  <body style="background-image: url(macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-3840x2160-1432.jpg);background-position: cover;">
+      <div class="loginbox">
+        <div class="wrapper">
+          <div class="title">Login Form</div>
+          <!----------- FORM SECTION -------------->
+          <form method="post" style="padding: 10px 30px 50px 30px;">
+            <!---------- USERNAME FIELD ------------>
+              <div class="field">
+                <input type="text" id="acno" name="uname" required >
+                <label>Account Number</label>
+              </div>
+              <!------------- /END/ ---------------->
+              <!----------- PASSWORD --------------->
+              <div class="field">
+                <input type="password" id="pwd" name="pass"  required >
+                <label>Password</label>
+              </div>
+              <!------------- /END/ ---------------->
+              <div class="content">
+              </div>
+                <!------------- /END/ ---------------->
+                <!------------- SUBMIT ---------------->
+              <div class="field">
+                <input type="submit" name="login" value="Login" onclick=" Bank.login()">
+              </div>
+              <!------------- /END/ ---------------->
+              <div class="signup-link">
+                  Not a member? <a href="registration.html">Register</a>
+              </div>
+          </form>
+          <!----------- END OF FORM SECTION -------------->
+        </div>
+      </div>
+    </body>
+    <!---------------- END OF BODY SECTION ---------------->
+</html>

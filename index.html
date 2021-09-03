@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome</title>
+	 	<meta name="viewport" content="width=device-widht, initial-scale=1.0">
+		<!------------- CSS STYLE ------------->
+  		<style type="text/css">
+  			*{
+				margin: 0;
+				padding: 0;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			body{
+				background-image: url(macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-3840x2160-1432.jpg); 
+				font-size: 14px;
+			}
+			.header {
+			overflow: hidden;
+			background-color: transparent;
+			padding: 20px 10px;
+			}
+
+			.header a {
+			float: left;
+			color: whitesmoke;
+			text-align: center;
+			padding: 10px;
+			text-decoration: none;
+			font-size: 15px; 
+			line-height: 5px;
+			border-radius: 10px;
+			}
+			.header a.logo {
+			font-size: 20px;
+			font-weight: bold;
+			}
+			.header a:hover {
+			background-color: white;
+			color: black;
+			}
+			.header-right {
+			float: right;
+			}
+			.data-text{
+			  text-align: center;
+			  color: #fff;
+			  padding-top: 180px;
+			}
+			.data-text h2{
+			  font-size: 75px;
+			}
+			.input-data{
+			  margin:70px auto 0; 
+			}
+			.input-data a{
+			  width: 150px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  margin: 0 10px;
+			  padding: 12px 0;
+			  color: #fff;
+			  border:.5px solid black;
+			  position: relative;
+			  z-index: 1;
+			  transition: color 0.0s;
+			}
+			.input-data a span{
+			  width: 0;
+			  height: 100%;
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  background: #fff;
+			  z-index: -1;
+			  transition: 0.0s;
+			}
+			.input-data a:hover span{
+			  width: 100%;
+			}
+			.input-data a:hover{
+			  color: #000;
+			}
+			@media screen and (max-width: 520px) {
+			  .data-text h2{
+			   font-size: 30px ;
+			  }
+			  .input-data a{
+			    text-align: center;
+			    position: relative;
+			    padding: 6px 0;
+			    border:.25px solid #fff;
+			  }
+			}
+  		</style>
+		<!------------- END OF CSS STYLE ------------->
+	</head>
+        <!------------- BODY SECTION ------------->
+	<body>
+		<!------------- HEADER SECTION ------------->
+		<div class="header">
+			<a href="#default" class="logo">MAC BANK</a>
+			<div class="header-right">
+			  <a href="#home">Home</a>
+			  <a href="contact.html">Contact</a>
+			</div>
+		  </div>
+		<!------------- END OF HEADER SECTION ------------->
+		<div class="ban">
+			<div class="data-text">
+				<h2>WELCOME TO MAC BANK</h2>
+				<div class="input-data">
+				<a href="login.html"><span></span> LOGIN</a>
+				<a href="registration.html"><span></span> REGISTER</a>
+				</div>
+			</div>
+		</div>
+	</body>
+    <!------------- END OF BODY SECTION ------------->
+</html>
